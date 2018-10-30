@@ -15,8 +15,8 @@ import random
 
 
 class Guess(object):
-    lower =0
-    upper =1
+    lower = 0
+    upper = 30
 
     def __init__(self):
         self.running = 0
@@ -26,7 +26,7 @@ class Guess(object):
     def start_guess(self):
         while self.running < 5:
             self.input = int(raw_input("enter the number\n"))
-            self.randm = int(self.generate_random())
+            self.randm = self.generate_random()
             if self.randm == self.input:
                 print("Numbers matched ", self.input)
             elif self.randm != self.input:
