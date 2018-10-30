@@ -20,7 +20,7 @@ class Guess(object):
 
     def __init__(self):
         self.running = 0
-        self.input = ""
+        self.input = None
         self.randm = None
 
     def start_guess(self):
