@@ -1,0 +1,112 @@
+#SETUP CONFIGURATION
+DUT_DETAILS:
+
+ DUT1_DETAILS:
+
+  macid : "70:B3:D5:1A:1B:5E"
+  patchid    : "003F0"
+  serial_num : "FT2C1CCBA"
+  relay_num      : 0
+  calibration : "1"
+  AuxAdcValue : "38"
+  Power :       "1"
+  PeriodicDCCalFreq : "60"
+
+ DUT2_DETAILS:
+
+  macid : "70:B3:D5:1A:1A:D2"
+  patchid    : "002GR"
+  serial_num : "FT2J9WJCA"
+  relay_num      : 2
+  calibration : "1"
+  AuxAdcValue : "36"
+  Power :       "0"
+  PeriodicDCCalFreq : "60"
+
+ DUT3_DETAILS:
+
+  macid : "70:B3:D5:1A:1B:74" 
+  patchid    : "003F8"
+  serial_num : "FT2T6ICLA"
+  relay_num      : 3
+  calibration : "1"
+  AuxAdcValue : "49"
+  Power :       "4"
+  PeriodicDCCalFreq : "60"
+
+ DUT4_DETAILS:
+
+  macid : "70:B3:D5:1A:1B:63"
+  patchid    : "003ET"
+  serial_num : "FT2J4LGWA"
+  relay_num      : 4
+  calibration : "1"
+  AuxAdcValue : "46"
+  Power :       "4"
+  PeriodicDCCalFreq : "60"
+ 
+ DUT5_DETAILS:
+
+  macid : "70:B3:D5:1A:1B:24"
+  patchid    : "003BE"
+  serial_num : "FT1RUS7SA"
+  relay_num      : 5
+  calibration : "1"
+  AuxAdcValue : "37"
+  Power :       "1"
+  PeriodicDCCalFreq : "60"
+
+NVDS_PARAMETERS:
+
+  ssid : "SLOWWIFI"
+  channel : 06
+  security : "wpa2"
+  boardflag : "ECP1v0" #v2 board = ADAv2 , v3 board = V3ADAR1 , ECP board = ECPv3
+  APPWDTEnable : "False"
+  PreviousSSID : "SLOWWIFI"
+  
+AP_DETAILS :
+
+AP1 :
+
+ ip   : 172.168.1.1
+ ssid  : "AUTOBOTS"
+ macid : 11:22:22:44:44:44
+ username : admin
+ password : admin
+
+AP2 :
+
+ ip   : 172.168.1.1
+ ssid  : dude
+ macid : 11:22:22:44:44:44
+ username : admin
+ password : admin
+
+
+SNIFFER DETAILS : 
+
+ ip  : 172.168.1.6
+ interface : wlan0
+
+WIAPP_CONTROLLER :
+
+ ip : 172.168.1.7
+ port  : 18574
+
+
+WEB_POWER :
+
+ ip  : 172.168.1.123
+ username : admin
+ password : 1234
+
+FLUKE_CONTROLLER :
+
+ ip : 172.168.1.8
+ port : 18765
+
+USB_RELAY :
+
+ port : "/dev/ttyACM0"
+
