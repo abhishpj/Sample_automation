@@ -19,8 +19,8 @@ class ThreadClass(object):
         self.thread_dict = dict()
 
     @keyword('START THREAD')
-    def start_thread(self,function_name,thread_name,args):
-            a = threading.Thread(target=function_name, name='%s'%thread_name, args=(args,))
+    def start_thread(self,function_name,thread_name,args(,)):
+            a = threading.Thread(target=function_name, name='%s'%thread_name, args=args)
             a.start()
             self.thread_dict['%s'%thread_name] = a
             return self.thread_dict
